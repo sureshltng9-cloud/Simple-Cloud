@@ -1,3 +1,1 @@
-This is branch2 line
-
-This is branch2
+This is branch2 
