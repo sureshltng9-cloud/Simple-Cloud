@@ -1,0 +1,5 @@
+This is branch1 line 
+second line is added to the branch 1 
+This is branch2 line
+
+This is branch1 line

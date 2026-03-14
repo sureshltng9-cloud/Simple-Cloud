@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Sales Data Table" icon-name="standard:account">
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-p-around_medium">
+                <div class="slds-grid slds-grid_vertical-align-start">
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning-input
+                            type="text"
+                            label="Search Records"
+                            value={searchKey}
+                            onchange={handleInputChange}
+                            placeholder="Enter search key..."
+                            class="slds-m-bottom_medium"
+                        ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning-datatable
+                            key-field="id"
+                            data={data}
+                            columns={columns}
+                            draft-values={draftValues}
+                            onsave={handleSave}
+                            hide-checkbox-column
+                            show-row-number-column
+                            class="slds-table_bordered slds-table_cell-buffer"
+                        >
+                        </lightning-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>
